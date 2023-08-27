@@ -1,0 +1,42 @@
+.btn.btn2{
+    display: inline-block;
+    background:#aea9aa  ;}
+    .contact-right form{
+      width: 100%;
+    }
+    form .btn2{
+        padding: 14px 60px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      
+      .btn {
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #0d0c0c;
+        transition: all 0.5s;
+      }
+      
+      .btn:hover, .btn.btn2:hover  {
+        background: #95ff00;
+        border: 5px solid #2b00ff;
+        transform: scale(1.1);
+      }
+      .btn:focus, .btn.btn2:focus{
+        background-color: #2e5bcc;  /* change to green color */
+    transform: translateY(-5px);  /* move the button slightly up */
+    box-shadow: 0 0 10px rgba(129, 159, 142, 0.5);  /* add a soft green glow */
+
+      }
+      .btn:focus, .btn.btn2:focus{
+        background-color: #772c4f;  /* change to red color */
+        transform: translateY(2px);  /* move the button slightly down to give a press effect */
+    }
+      
+      
