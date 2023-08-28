@@ -228,7 +228,7 @@
                         
                      
                        
-                        <a href="https://wa.me/+250787795163?text="hello baptiste! are you avaible">
+                      <p>  <a href="https://wa.me/+250787795163?text="hello baptiste! are you avaible"></p>
                           <button><i class="fa-brands fa-whatsapp"></i>Chat with us </button></a>
                           
                         
@@ -251,7 +251,6 @@
             <p>Copyright @imanariyo. Made with <i class="fa-solid fa-heart">ambtion</i></p>
         </div>
     </div>
-  
     <script>
         function openTab(tabName) {
             var tabLinks = document.getElementsByClassName("tab-links");
@@ -264,18 +263,14 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");
-        }
-
-      
+        } 
     </script>
     <script>
        function call() {
       var phone_number = "0787795163";
       window.open("tel:" + phone_number, "_blank");
     }
-    </script>
-   
-    
+    </script>  
     <script>
 var sidemenu=document.getElementById("sidemenu");
 function openmenu(){
@@ -299,7 +294,7 @@ const msg=document.getElementById("msg");
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response =>{msg.innerHTML = "Message sent succefully"
-  setTimeout(function(){msg.innerHTML  = " "},5000)
+  setTimeout(function(){msg.innerHTML  = " "},3000)
   form.reset()
 })
       .catch(error => console.error('Error!', error.message))

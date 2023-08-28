@@ -8,7 +8,7 @@
 }
 
 nav {
-    background-color: #333;
+    background-color:#818199;
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -39,23 +39,26 @@ nav {
 
 
 .nav-list a:hover {
-    color: #2113e4;
-    border: 3px solid black;
+    color: rgb(240, 235, 235);
+   
+    /* border: 1px solid black; */
+    padding: 3px;
+    font-size: large;
 
 }
 .nav-list li a::after {
     content: '';
     width: 0%;
-    height: 8px;
+    height: 3px;
     background: #4800ff;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.2s;
   }
-  .nav-list li a:hover::after {
+  /* .nav-list li a:hover::after {
     width: 100%;
-}
+} */
 
 /* For mobile responsiveness */
 @media screen and (max-width: 768px) {
