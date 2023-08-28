@@ -182,7 +182,7 @@
                       <p>The app connects you to <br>
                           talented people 
                           around the<br> world.<br> Download it from 
-                          the Play Store.</p>
+                          the Play<br> Ply Store.</p>
                       <a href="#">.<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                 </div>
@@ -191,7 +191,10 @@
                     <img src="images/work-2.png" alt="Music App Design">
                     <div class="layer">
                         <h3>music app</h3>
-                        <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                        <p>The app connects you to <br>
+                            talented people 
+                            around the<br> world.<br> Download it from 
+                            the<br> Ply Store.</p>
                         <a href="#">.<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -200,7 +203,10 @@
                     <img src="images/work-3.png" alt="Online Shopping App Design">
                     <div class="layer">
                         <h3>online shopping app</h3>
-                        <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                        <p>The app connects you to <br>
+                            talented people 
+                            around the<br> world.<br> Download it from 
+                            thea<br> Ply Store.</p>
                         <a href="#">.<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -219,13 +225,9 @@
                     <p> <a href="mailto:imanariyobaptiste@gmail.com" aria-label="Facebook Profile"><i class="fa-solid fa-envelope"></i></a> imanariyobaptiste@gmail.com</p>
                     <p><a href="#" aria-label="Phone" onclick="call()"><i class="fa-solid fa-phone"></i></a> 0787795163</p>
                     <div class="social-icons">
-                        <a href="mailto:imanariyobaptiste@gmail.com" aria-label="Facebook Profile"><i class="fa-solid fa-envelope"></i></a>
-                        <!-- <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a> -->
+                        
+                     
                        
-                        <a href="#" aria-label="Phone" onclick="call()"><i class="fa-solid fa-phone"></i></a>
-                        <!-- <a href="#" aria-label="Twitter Profile"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a> -->
                         <a href="https://wa.me/+250787795163?text="hello baptiste! are you avaible">
                           <button><i class="fa-brands fa-whatsapp"></i>Chat with us </button></a>
                           
@@ -278,10 +280,16 @@
 var sidemenu=document.getElementById("sidemenu");
 function openmenu(){
   sidemenu.style.right="0";
+  var links = sidemenu.getElementsByTagName('a');
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', closemenu);
+}
+  
 }
 function closemenu(){
   sidemenu.style.right= "-200px";
 }
+
     </script>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw1mwMp062oy6UNCDpEGGuMVYsl6osfX3wFCs24gbC5Tpb1YmcwyOntiztWHHbDnvvDOQ/exec'

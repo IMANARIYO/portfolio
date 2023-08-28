@@ -202,14 +202,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding:0;
+  padding-right: 40px;
   text-align: center;
-  font-size:14px ;
+  color: #fff;
+  font-size:20px ;
    transition: height 0.5s; 
 }
 
 .layer h3 {
   font-weight: 500;
+  font-size: 30px;
+  font-style: underline;
   margin-bottom: 20px;
 }
 
@@ -278,9 +282,11 @@ form input, form textarea {
   width: 100%;
   border:0;
   outline:none;
-  background:#1b1919;
+  color: #fff;
+  background:#292727;
   padding:15px;
-  margin: 15px 0;  
+  margin: 15px 0;
+  font-size: 30px;
   
   font-size: 18px;
   border-radius: 6px;
