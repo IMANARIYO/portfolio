@@ -24,7 +24,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">skills</a></li>
+                <li><a href="#skills">skills</a></li>
                 <i class="fas closenav" onclick="closemenu()">X</i> 
             </ul>
 
@@ -238,12 +238,17 @@
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet" >
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <textarea name="Message" id="message" rows="6" placeholder=" you can write your message here" required></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                        <input type="text" name="Name" placeholder="Your name" id="name" onkeyup="validateName()"  required>
+                       <span id="name-error" class="input"></span> 
+                        <input type="email" name="Email" placeholder="Your email" id="email" onkeyup="validateEmail()"  required>
+                        <span id="email-error"  class="input"></span> 
+                        <textarea name="Message" id="message" rows="6" placeholder=" you can write your message here" id="message" onkeyup=" validateMessage()" required></textarea>
+                        <span id="message-error"  class="input"></span><br>
+                        <button type="submit" class="btn btn2" onclick="return validateForm()">Submit</button>
                     </form> 
                     <span id="msg"> </span> 
+                    <span id="submit-error"> </span>
                 </div>
             </div>
         </div>
@@ -251,41 +256,8 @@
             <p>Copyright @imanariyo. Made with <i class="fa-solid fa-heart">ambtion</i></p>
         </div>
     </div>
-    <script>
-        function openTab(tabName) {
-            var tabLinks = document.getElementsByClassName("tab-links");
-            var tabContents = document.getElementsByClassName("tab-contents");
-            for (let tabLink of tabLinks) {
-                tabLink.classList.remove("active-link");
-            }
-            for (let tabContent of tabContents) {
-                tabContent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabName).classList.add("active-tab");
-        } 
-    </script>
-    <script>
-       function call() {
-      var phone_number = "0787795163";
-      window.open("tel:" + phone_number, "_blank");
-    }
-    </script>  
-    <script>
-var sidemenu=document.getElementById("sidemenu");
-function openmenu(){
-  sidemenu.style.right="0";
-  var links = sidemenu.getElementsByTagName('a');
-for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', closemenu);
-}
-  
-}
-function closemenu(){
-  sidemenu.style.right= "-200px";
-}
-
-    </script>
+   
+   
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw1mwMp062oy6UNCDpEGGuMVYsl6osfX3wFCs24gbC5Tpb1YmcwyOntiztWHHbDnvvDOQ/exec'
   const form = document.forms['submit-to-google-sheet']
@@ -300,27 +272,8 @@ const msg=document.getElementById("msg");
       .catch(error => console.error('Error!', error.message))
   })
 </script>
-<script>
-  function isshoworhide() {
-      var targeted = event.target.className;
-      const id = event.target.id;
-      const tochange = document.querySelector(`.${targeted}`);
-      const toShowOrHide = document.getElementById(targeted);
-      var view = tochange.innerHTML;
-      if (tochange.innerHTML === 'view') {
-          tochange.innerHTML = 'hide';
-          toShowOrHide.style.height = 'auto';
-          toShowOrHide.style.display = 'block';
-      }
-      else {
-          tochange.innerHTML = 'view';
-          toShowOrHide.style.height = '0';
-          toShowOrHide.style.display = 'none';
-      }
-  } 
-  </script>
 
-
+<script src="portfoilio.js"></script>
 </body>
 </html>
     

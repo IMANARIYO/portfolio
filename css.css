@@ -132,7 +132,7 @@
 }
 
 .services-list div {
-  background:rgb(219, 217, 217);
+  background:rgb(223, 172, 172);
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -292,6 +292,11 @@ form input, form textarea {
   border-radius: 6px;
     
 }
+.contact-right span{
+  font-size:14px;
+  color: red;
+}
+ 
 
 .copyright{
   width: 100%;
@@ -300,9 +305,8 @@ form input, form textarea {
   background: #818199;
   font-weight: 300;
   margin-top: 20px;
-  
-
 }
+
 .fa-bars{
   display: none;
   height: 0;
@@ -314,6 +318,9 @@ form input, form textarea {
   height: 0;
   width: 0;
   opacity: 0;
+}
+submit{
+  outline: none;
 }
 
  

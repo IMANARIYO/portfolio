@@ -1,6 +1,7 @@
 .btn.btn2{
     display: inline-block;
     background:#EA4335;
+    outline: none;
   }
     .contact-right form{
       width: 100%;
@@ -15,6 +16,7 @@
         color:white;
         display: block;
         margin: 50px auto;
+        outline: none;
         width: fit-content;
         background:#EA4335;
         padding: 14px 50px;
