@@ -103,25 +103,3 @@ function validateForm(){
     setTimeout(function(){ v.style.display="none"},3000);
  }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ labolatory making
-function laboratory() {
-    let tabs = ["skills", "education", "experience"];
-    let originalDisplay = {}; // Store the original display value
-
-    for (let index = 0; index < tabs.length; index++) {
-        const element = tabs[index];
-        const tabElement = document.getElementById(element);
-
-        // Store the original display value
-        originalDisplay[element] = tabElement.style.display;
-
-        // Show the tab's content
-        tabElement.style.display = "block";
-
-        // Reset the display after the specified delay
-        setTimeout(() => {
-            tabElement.style.display = originalDisplay[element];
-        }, delay);
-    }
-}
-
-laboratory();
