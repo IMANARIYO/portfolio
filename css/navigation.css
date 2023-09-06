@@ -62,14 +62,11 @@ nav {
 
 /* For mobile responsiveness */
 @media screen and (max-width: 768px) {
-    /* .nav-container {
-        flex-direction: column;
-    } */
+   
 
     .nav-list {
         flex-direction: column;
-     
-        gap: 1.5rem;
+        gap: 0.5em;
     } 
 }
 

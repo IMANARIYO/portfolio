@@ -68,7 +68,7 @@ z-index: 2 ;
  .closenav{
     margin-bottom: 40px;
     position: fixed;
-    top: 200px;
+    top:0px;
  }
  .fa-solid{
     display:block;
@@ -77,13 +77,17 @@ z-index: 2 ;
   opacity:1;
     } 
     .closenav{
-      position: relative;
+       position: relative;
      color: white;
-     margin-left:90px;
-     margin-top: -20px;
+     margin-right:9px;
+     margin-top: -30px; 
      height: auto;
-     width: auto;
+     width: auto; 
      opacity: 1;
     } 
+    #byihariye{
+      margin-bottom: 16px;
+      padding: 30px;
+    }
     
    }

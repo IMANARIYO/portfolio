@@ -221,7 +221,7 @@
   margin-top: 20px;
   color: #ff004f;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 60px;
   background: #fff;
   width: 60px;
@@ -237,6 +237,11 @@
 .work:hover .layer {
   height: 100%;
 }
+/* my projects======================= */
+
+
+
+
     
     
 
@@ -322,5 +327,8 @@ form input, form textarea {
 submit{
   outline: none;
 }
+
+
+
 
  
